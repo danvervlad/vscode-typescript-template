@@ -4,7 +4,7 @@
   "description": "typescript template",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
+    "start": "node ./out/index.js",
     "ts-build": "./node_modules/.bin/tsc --build --clean && ./node_modules/.bin/tsc",
     "dev-start": "npm run ts-build && node ./out/index.js"
   },
