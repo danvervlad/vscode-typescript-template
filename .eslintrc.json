@@ -1,0 +1,30 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "rules": {
+        "semi": "error",
+        "no-undef": "off",
+        "arrow-body-style": ["error", "as-needed"],
+        "eqeqeq": ["error", "smart"],
+        "@typescript-eslint/no-empty-interface": "off",
+        "no-restricted-imports": ["error", { "patterns": ["../"] }],
+        "@typescript-eslint/explicit-member-accessibility": "error",
+        "@typescript-eslint/member-delimiter-style": "error",
+        "@typescript-eslint/member-ordering": "error",
+        "@typescript-eslint/naming-convention": ["error", {
+            "selector": ["property"],
+            "modifiers": ["private"],
+            "format": ["camelCase"],
+            "leadingUnderscore": "require"
+        }, {
+            "selector": "interface",
+            "format": ["PascalCase"],
+            "prefix": ["I"]
+        }],
+    "@typescript-eslint/no-duplicate-enum-values": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/quotes": ["error", "double"]
+  }
+}

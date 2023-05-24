@@ -1,3 +1,1 @@
-(async () => {
-    console.log("This is a template. Write async code here.");
-})();
+console.log("Hello, world!");
