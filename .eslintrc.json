@@ -10,7 +10,19 @@
         "eqeqeq": ["error", "smart"],
         "@typescript-eslint/no-empty-interface": "off",
         "no-restricted-imports": ["error", { "patterns": ["../"] }],
-        "@typescript-eslint/explicit-member-accessibility": "error",
+        "@typescript-eslint/explicit-member-accessibility": [
+          "error",
+          {
+            "accessibility": "explicit",
+            "overrides": {
+              "accessors": "explicit",
+              "constructors": "no-public",
+              "methods": "explicit",
+              "properties": "explicit",
+              "parameterProperties": "explicit"
+            }
+          }
+        ],
         "@typescript-eslint/member-delimiter-style": "error",
         "@typescript-eslint/member-ordering": "error",
         "@typescript-eslint/naming-convention": ["error", {
