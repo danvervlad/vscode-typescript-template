@@ -9,7 +9,6 @@
         "arrow-body-style": ["error", "as-needed"],
         "eqeqeq": ["error", "smart"],
         "@typescript-eslint/no-empty-interface": "off",
-        "no-restricted-imports": ["error", { "patterns": ["../"] }],
         "@typescript-eslint/explicit-member-accessibility": [
           "error",
           {
@@ -35,6 +34,7 @@
             "format": ["PascalCase"],
             "prefix": ["I"]
         }],
+    "@typescript-eslint/explicit-module-boundary-types": "error",
     "@typescript-eslint/no-duplicate-enum-values": "error",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/quotes": ["error", "double"]
